@@ -1,0 +1,21 @@
+.header {
+  padding: 71px 50px 0 70px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 293px;
+    height: 74px;
+  }
+
+  &__phone {
+    padding-top: 12px;
+    color: $color-primary;
+    font-size: 36px;
+    line-height: 44px;
+    background-color: $color-background;
+  }
+}
