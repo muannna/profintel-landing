@@ -1,13 +1,13 @@
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 img {
@@ -20,10 +20,10 @@ a {
 }
 
 html {
-  font-size: 10px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   height: 100%;
+  font-size: 10px;
+  scroll-behavior: smooth;
   user-select: none;
 }
 
