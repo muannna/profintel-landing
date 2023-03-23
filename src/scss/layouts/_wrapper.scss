@@ -1,5 +1,11 @@
 .wrapper {
-  position: relative;
   max-width: $content-width;
   margin: auto;
+}
+
+.promo {
+  &__wrapper {
+    position: relative;
+    overflow-x: hidden;
+  }
 }

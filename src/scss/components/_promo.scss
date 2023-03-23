@@ -1,7 +1,7 @@
 .promo {
   &__content{
     max-width: 510px;
-    padding: 57px 0 176px 15px;
+    padding: 57px 0 176px 20px;
   }
 
   &__title_accent {
@@ -18,21 +18,22 @@
 
   &__subtitle {
     max-width: 400px;
-    margin: 0 30px 47px 0;
+    margin: 0 24px 47px 0;
   }
 
   &__media {
     position: absolute;
+    z-index: 10;
     top: -53px;
-    left: 564px;
+    left: 569px;
     width: 685px;
     height: 685px;
-    background: no-repeat center url('../assets/png/group.png');
+    background: no-repeat center url('../assets/images/png/group.png');
   }
 
   &__image {
     position: absolute;
     top: 33px;
-    left: -54px;
+    left: -49px;
   }
 }

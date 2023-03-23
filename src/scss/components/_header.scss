@@ -1,9 +1,10 @@
 .header {
-  padding: 71px 50px 0 70px;
+  margin: 71px 0 0;
 
   &__logo {
     width: 293px;
     height: 74px;
+    margin-left: 20px;
 
     &:hover {
       @extend %transition-fast;
@@ -13,10 +14,10 @@
   }
 
   &__phone {
+    @include font(700, 3.6rem, 4.4rem);
+
     padding-top: 12px;
     color: $color-primary;
-    font-size: 36px;
-    line-height: 44px;
     background-color: $color-background;
   }
 }

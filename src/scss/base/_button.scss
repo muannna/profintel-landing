@@ -1,9 +1,8 @@
 button {
+  @include font(700, 2rem, 2rem);
+
   padding: 27px 46px;
   color: $color-light;
-  font-weight: 700;
-  font-size: 19.86px;
-  line-height: 20px;
   background-color: $color-button;
   border: 1px solid $color-button;
   border-radius: 50px;

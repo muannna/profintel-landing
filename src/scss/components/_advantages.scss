@@ -1,4 +1,13 @@
 .advantages {
   position: relative;
+  color: $color-light;
   background-color: $color-primary;
+
+  &__title {
+    &_accent {
+      @include font(700, 4.8rem, 5.9rem);
+
+      color: $color-second-accent;
+    }
+  }
 }

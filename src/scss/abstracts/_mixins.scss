@@ -3,3 +3,13 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin columns ($width: auto) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  >* {
+    flex-basis: $width;
+  }
+}

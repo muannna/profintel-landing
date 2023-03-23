@@ -22,6 +22,7 @@ module.exports = ({ dev }) => ({
   },
   output: {
     filename: '[name].js',
+    assetModuleFilename: 'images/[hash][ext][query]',
     clean: true,
   },
   module: {
