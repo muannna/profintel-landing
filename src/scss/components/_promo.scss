@@ -1,7 +1,7 @@
 .promo {
   &__content{
     max-width: 510px;
-    padding: 57px 0 168px 15px;
+    padding: 57px 0 176px 15px;
   }
 
   &__title_accent {
@@ -21,7 +21,7 @@
     margin: 0 30px 44px 0;
   }
 
-  &__image {
+  &__media {
     position: absolute;
     top: -53px;
     left: 564px;
@@ -30,11 +30,9 @@
     background: no-repeat center url('../assets/png/group.png');
   }
 
-  &__lights {
+  &__image {
     position: absolute;
     top: 33px;
     left: -54px;
-    width: 600px;
-    height: 600px;
   }
 }
