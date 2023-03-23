@@ -1,0 +1,23 @@
+button {
+  padding: 30px 47px;
+  color: $color-light;
+  font-weight: 700;
+  font-size: 19.86px;
+  line-height: 20px;
+  background-color: $color-button;
+  border: 1px solid $color-button;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: $color-button-hover;
+  border: 1px solid $color-button-hover;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+button:active {
+  background-color: $color-accent;
+  border: 1px solid $color-accent;
+  transition: 0.2s ease-in-out;
+}

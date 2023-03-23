@@ -1,0 +1,40 @@
+.promo {
+  &__content{
+    max-width: 510px;
+    padding: 57px 0 168px 15px;
+  }
+
+  &__title_accent {
+    color: $color-additional-accent;
+  }
+
+  &__span {
+    display: inline-block;
+    width: 38px;
+    height: 8px;
+    margin-top: 15px;
+    background-color: $color-additional-accent;
+  }
+
+  &__subtitle {
+    max-width: 400px;
+    margin: 0 30px 44px 0;
+  }
+
+  &__image {
+    position: absolute;
+    top: -53px;
+    left: 564px;
+    width: 685px;
+    height: 685px;
+    background: no-repeat center url('../assets/png/group.png');
+  }
+
+  &__lights {
+    position: absolute;
+    top: 33px;
+    left: -54px;
+    width: 600px;
+    height: 600px;
+  }
+}
