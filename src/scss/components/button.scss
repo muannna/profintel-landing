@@ -7,17 +7,19 @@ button {
   background-color: $color-button;
   border: 1px solid $color-button;
   border-radius: 50px;
-}
 
-button:hover {
-  background-color: $color-button-hover;
-  border: 1px solid $color-button-hover;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
+  &:hover {
+    @extend %transition-slow;
+  
+    background-color: $color-button-hover;
+    border: 1px solid $color-button-hover;
+    cursor: pointer;
+  }
 
-button:active {
-  background-color: $color-accent;
-  border: 1px solid $color-accent;
-  transition: 0.2s ease-in-out;
+  &:active {
+    @extend %transition-fast;
+  
+    background-color: $color-accent;
+    border: 1px solid $color-accent;
+  }
 }

@@ -30,31 +30,27 @@ body {
 }
 
 h1 {
+  @include font(700, 6.4rem, 7.8rem);
+
+  @extend %font-add;
+
   margin: 0.66em 0;
-  font-weight: 700;
-  font-size: 64px;
-  font-family: "Montserrat Alternates", sans-serif;
-  line-height: 78px;
 }
 
 h2 {
-  font-weight: 400;
-  font-size: 48px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  line-height: 59px;
+  @include font(400, 4.8rem, 5.9rem);
+
+  @extend %font-add;
 }
 
 h3 {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 39px;
+  @include font(400, 2.4rem, 3.9rem);
 }
 
 h4 {
-  font-weight: 600;
-  font-size: 22px;
-  font-family: 'Montserrat Alternates', sans-serif;
-  line-height: 27px;
+  @include font(600, 2.2rem, 2.7rem);
+
+  @extend %font-add;
 }
 
 .phone {

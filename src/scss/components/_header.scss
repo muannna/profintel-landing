@@ -4,11 +4,12 @@
   &__logo {
     width: 293px;
     height: 74px;
-  }
 
-  &__logo:hover {
-    filter: opacity(0.8);
-    transition: 0.2s;
+    &:hover {
+      @extend %transition-fast;
+  
+      filter: opacity(0.8);
+    }
   }
 
   &__phone {
