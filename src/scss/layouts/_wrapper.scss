@@ -10,6 +10,16 @@
   }
 }
 
+.benefits {
+  &__wrapper {
+    @include media-tablet {
+      padding-top: 86px;
+    }
+
+    padding-top: 148px;
+  }
+}
+
 .contact-me {
   &__wrapper {
     max-width: $content-width + 30px;
