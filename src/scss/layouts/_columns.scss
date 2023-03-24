@@ -3,5 +3,5 @@
 }
 
 .layout-3-column {
-  @include columns(30%);
+  @include columns($justify: center, $gap: 120px);
 }

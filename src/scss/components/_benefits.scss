@@ -1,0 +1,132 @@
+.benefits {
+  color: $color-primary;
+
+  &__wrapper {
+    padding-top: 148px;
+  }
+
+  &__title {
+    max-width: 703px;
+    margin-left: 256px;
+    text-align: center;
+
+    &_accent {
+      color: $color-accent;
+    }
+  }
+
+  &__subtitle {
+    max-width: 183px;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  &__content {
+    position: relative;
+    padding-bottom: 22px;
+  }
+
+  &__media {
+    position: relative;
+
+    &_bg {
+      min-width: 442px;
+      height: 777px;
+      background: no-repeat center url('../assets/images/png/monitors.png');
+    }
+
+    &_points {
+      width: 144px;
+      height: 145.9px;
+      background: no-repeat center url('../assets/images/svg/point_arrow.svg');
+
+      &:nth-child(1) {
+        position: absolute;
+        top: 154px;
+        left: 195px;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 107px;
+        left: 756px;
+        rotate: 124deg;
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        top: 456px;
+        left: 316px;
+        rotate: 301deg;
+      }
+
+      &:nth-child(4) {
+        position: absolute;
+        top: 429px;
+        left: 834px;
+        rotate: 171deg;
+      }
+    }
+  }
+
+  &__list {
+    @include columns($width: 50%, $justify: center, $gap: 515px);
+
+    row-gap: 175px;
+    position: absolute;
+    top: 54px;
+    left: 11px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.benefit {
+  max-width: 280px;
+  text-align: start;
+
+  &__ico {
+    &_first {
+      width: 59px;
+      height: 63px;
+      background-image: url('../assets/images/svg/monitor.svg');
+    }
+
+    &_second {
+      width: 57px;
+      height: 73px;
+      background-image: url('../assets/images/svg/locator.svg');
+    }
+
+    &_third {
+      width: 51px;
+      height: 94px;
+      margin: 14px 0 0 16px;
+      background-image: url('../assets/images/svg/thunder.svg');
+    }
+
+    &_fourth {
+      width: 50px;
+      height: 60px;
+      margin-top: 26px;
+      background-image: url('../assets/images/svg/phone.svg');
+    }
+  }
+
+  &__title {
+    max-width: 203px;
+    line-height: 29px;
+
+    &_third {
+      padding-top: 34px;
+    }
+
+    &_fourth {
+      margin-top: 35px;
+    }
+  }
+
+  &:nth-child(1) {
+    padding-top: 41px;
+  }
+}
