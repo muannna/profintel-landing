@@ -12,6 +12,12 @@
     }
   }
 
+  &__content {
+    @include media-tablet {
+      padding-bottom: 60px;
+    }
+  }
+
   &__title {
     @include media-laptop {
       text-align: center;
@@ -24,6 +30,10 @@
   &__subtitle {
     @include media-laptop {
       text-align: center;
+    }
+
+    @include media-tablet {
+      padding-left: 0;
     }
 
     padding-left: 6px;
@@ -42,10 +52,18 @@
   }
 
   &__form {
+    @include media-tablet {
+      padding-top: 0;
+    }
+
     padding-top: 10px;
   }
 
   &__line {
+    @include media-tablet {
+      padding: 82px 0 0;
+    }
+
     width: 100%;
     padding: 92px 0 0;
     background: no-repeat bottom url('../assets/images/png/line.png');
@@ -53,11 +71,21 @@
 }
 
 .form {
+  @include media-tablet {
+    @include columns($justify: center);
+
+    align-items: baseline;
+  }
+
   position: relative;
 
   &__title {
     @include media-laptop {
       text-align: center;
+    }
+
+    @include media-tablet {
+      display: none;
     }
 
     margin-bottom: 35px;
@@ -68,6 +96,11 @@
     @include media-laptop {
       margin: auto;
       text-align: center;
+    }
+
+    @include media-tablet {
+      width: 417px;
+      padding-top: 44px;
     }
 
     width: 436px;
@@ -83,6 +116,11 @@
       position: static;
     }
 
+    @include media-tablet {
+      width: 341px;
+      margin-top: 23px;
+    }
+
     position: absolute;
     top: 0;
     left: 302px;
@@ -94,6 +132,12 @@
 }
 
 input[type="tel"] {
+  @include media-laptop {
+    width: 342px;
+    height: 75px;
+    padding: 36px 93px 26px 4px;
+  }
+
   z-index: 0;
   width: 410px;
   padding: 28px 206px 28px 48px;
