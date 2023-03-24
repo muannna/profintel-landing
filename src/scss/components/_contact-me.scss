@@ -1,25 +1,40 @@
 .contact-me {
   position: relative;
   padding: 90px 0 0;
-  overflow: hidden;
   color: $color-light;
   background-color: $color-accent;
 
   &__column {
-    @include columns($justify: start, $gap: 79px)
+    @include columns($justify: start, $gap: 79px);
+
+    @include media-laptop {
+      justify-content: center;
+    }
   }
 
   &__title {
+    @include media-laptop {
+      text-align: center;
+    }
+
     max-width: 305px;
     padding-bottom: 33px;
   }
 
   &__subtitle {
+    @include media-laptop {
+      text-align: center;
+    }
+
     padding-left: 6px;
     color: $color-light;
   }
 
   &__arrow {
+    @include media-laptop {
+      display: none;
+    }
+
     width: 394px;
     height: 72px;
     padding-top: 10px;
@@ -31,7 +46,7 @@
   }
 
   &__line {
-    width: 1223px;
+    width: 100%;
     padding: 92px 0 0;
     background: no-repeat bottom url('../assets/images/png/line.png');
   }
@@ -41,11 +56,20 @@
   position: relative;
 
   &__title {
+    @include media-laptop {
+      text-align: center;
+    }
+
     margin-bottom: 35px;
     color: $color-light;
   }
 
   &__subtitle {
+    @include media-laptop {
+      margin: auto;
+      text-align: center;
+    }
+
     width: 436px;
     padding-top: 41px;
   }
@@ -54,6 +78,10 @@
     @include font(700, 2rem, 2rem);
 
     @extend %font-add2;
+
+    @include media-laptop {
+      position: static;
+    }
 
     position: absolute;
     top: 0;

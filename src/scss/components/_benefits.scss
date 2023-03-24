@@ -6,6 +6,10 @@
   }
 
   &__title {
+    @include media-laptop {
+      margin: auto;
+    }
+
     max-width: 703px;
     margin-left: 256px;
     text-align: center;
@@ -22,6 +26,10 @@
   }
 
   &__content {
+    @include media-laptop {
+      overflow: hidden;
+    }
+
     position: relative;
     padding-bottom: 22px;
   }
@@ -30,6 +38,10 @@
     position: relative;
 
     &_bg {
+      @include media-laptop {
+              background: no-repeat center url('../assets/images/png/monitors-small.png');
+      }
+
       min-width: 442px;
       height: 777px;
       background: no-repeat center url('../assets/images/png/monitors.png');
@@ -71,6 +83,35 @@
 
   &__list {
     @include columns($width: 50%, $justify: center, $gap: 515px);
+
+    @include media-laptop {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      width: 0,8vw;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      column-gap: 15vw;
+
+      & > .benefit {
+        width: 40%;
+        margin-right: 5%;
+        margin-bottom: 80px;
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @include media-mobile {
+      & > .benefit {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
 
     row-gap: 175px;
     position: absolute;

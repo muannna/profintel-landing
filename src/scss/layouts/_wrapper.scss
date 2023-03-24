@@ -18,6 +18,10 @@
 
 .footer {
   &__wrapper {
+    @include media-laptop {
+      margin: 0 30px;
+    }
+
     max-width: $content-width + 50px;
   }
 }

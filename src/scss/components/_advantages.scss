@@ -4,23 +4,62 @@
   background-color: $color-primary;
 
   &__media {
+    @include media-laptop {
+      padding-left: 5rem;
+    }
+
+    @include media-tablet {
+      padding-left: 0;
+    }
+
     padding-left: 74px;
   }
 
   &__content {
     max-width: 610px;
     padding: 80px 0 0 6px;
+
+    @include media-laptop {
+      max-width: 367px;
+      padding-top: 0
+    }
   }
 
   &__title {
+    @include media-laptop {
+      @include font(400, 3.2rem, 3.9rem);
+    }
+
     &_accent {
       @include font(700, 4.8rem, 5.9rem);
+
+      @include media-laptop {
+        @include font(700, 3.2rem, 3.9rem)
+      }
 
       color: $color-second-accent;
     }
   }
 
+  &__image {
+    @include media-laptop {
+      width: 200px;
+    }
+
+    @include media-tablet {
+      width: 123px;
+    }
+  }
+
   &__columns {
+    @include media-laptop {
+      @include columns($justify: center, $gap: 35px);
+    }
+
+    @include media-tablet {
+      @include columns($justify: center, $gap: 10px);
+    }
+
     padding: 80px 0;
   }
 
