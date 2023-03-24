@@ -1,3 +1,66 @@
-footer {
+.footer {
+  @include font(300, 1.2rem, 3.1rem);
+
+  padding-top: 53px;
+  color: $color-light;
   background-color: $color-accent;
+
+  &__logo {
+    width: 139px;
+    height: 35px;
+    margin: 12px 0 0;
+    filter: invert(1) contrast(10);
+
+    &:hover {
+      @extend %transition-fast;
+
+      filter: opacity(0.8);
+    }
+  }
+
+  &__phone {
+    @include font(700, 2.4rem, 2.9rem);
+
+    color: $color-light;
+  }
+
+  &__mail {
+    @include font(600, 1.5rem, 1.8rem);
+
+    padding: 10px 0;
+    color: $color-light;
+    text-align: end;
+    text-decoration: underline;
+  }
+}
+
+.social {
+  margin-left: 126px;
+
+  &__icons {
+    padding-top: 2px;
+
+    &_vk {
+      display: inline-block;
+      width: 38px;
+      height: 22px;
+      background: no-repeat center url('../assets/images/svg/vk.svg');
+    }
+
+    &_youtube {
+      display: inline-block;
+      width: 40px;
+      height: 27px;
+      margin: 2px 0 0 17px;
+      background: no-repeat center url('../assets/images/svg/youtube.svg');
+    }
+  }
+}
+
+.contact-us {
+  margin: 0 69px 90px 0;
+
+  a {
+    display: block;
+  }
 }

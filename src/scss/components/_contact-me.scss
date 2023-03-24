@@ -1,4 +1,80 @@
 .contact-me {
   position: relative;
+  padding: 90px 0 0;
+  overflow: hidden;
+  color: $color-light;
   background-color: $color-accent;
+
+  &__column {
+    @include columns($justify: start, $gap: 79px)
+  }
+
+  &__title {
+    max-width: 305px;
+    padding-bottom: 33px;
+  }
+
+  &__subtitle {
+    padding-left: 6px;
+    color: $color-light;
+  }
+
+  &__arrow {
+    width: 394px;
+    height: 72px;
+    padding-top: 10px;
+    background: no-repeat right center url('../assets/images/svg/arrow.svg');
+  }
+
+  &__form {
+    padding-top: 10px;
+  }
+
+  &__line {
+    width: 1223px;
+    padding: 92px 0 0;
+    background: no-repeat bottom url('../assets/images/png/line.png');
+  }
+}
+
+.form {
+  position: relative;
+
+  &__title {
+    margin-bottom: 35px;
+    color: $color-light;
+  }
+
+  &__subtitle {
+    width: 436px;
+    padding-top: 41px;
+  }
+
+  &__button {
+    @include font(700, 2rem, 2rem);
+
+    @extend %font-add2;
+
+    position: absolute;
+    top: 0;
+    left: 302px;
+    width: 257px;
+    height: 77px;
+    padding: 28px 0;
+    text-align: center;
+  }
+}
+
+input[type="tel"] {
+  z-index: 0;
+  width: 410px;
+  padding: 28px 206px 28px 48px;
+  border-radius: 50px;
+
+  &::placeholder {
+    @include font(400, 2rem, 2.5rem);
+
+    color: $color-tel;
+    text-align: center;
+  }
 }

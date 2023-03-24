@@ -97,32 +97,39 @@
     </section>
     <section class="contact-me">
       <div class="border__top border_green"></div>
-      <div class="wrapper">
-        <div class="contact-me__content">
-          <h2>Остались вопросы?</h2>
-          <h3>Оставляй заявку</h3>
+      <div class="contact-me__wrapper wrapper">
+        <div class="contact-me__column">
+          <div class="contact-me__content">
+            <h2 class="contact-me__title">Остались вопросы?</h2>
+            <h3 class="contact-me__subtitle">Оставляй заявку</h3>
+            <div class="contact-me__arrow"></div>
+          </div>
+          <div class="contact-me__form">
+            <h3 class="form__title">Объясняем понятно, решаем быстро</h3>
+            <form action method="POST" class="form">
+              <input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+              <button type="submit" class="button form__button">Перезвоните мне</button>
+            </form>
+            <p class="form__subtitle">Нажимая на кнопку «Оставить заявку», вы даёте согласие на обработку персональных данных</p>
+          </div>
         </div>
-        <div class="contact-me__form">
-          <h3>Объясняем понятно, решаем быстро</h3>
-          <form action method="POST">
-            <input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
-            <button type="submit" class="button">Перезвоните мне</button>
-          </form>
-          <p>Нажимая на кнопку «Оставить заявку», вы даёте согласие на обработку персональных данных</p>
-        </div>
+        <div class="contact-me__line"></div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="wrapper">
-      <div class="layout-3-column">
+    <div class="footer__wrapper wrapper">
+      <div class="layout-2-column">
         <div class="copyright">
-          <a href="#" class="footer__logo logo">Logo</a>
+          <a href="#" class="footer__logo logo"></a>
           <p>2007-2022 год</p>
         </div>
         <div class="social">
           <p>Мы в соц. сетях:</p>
-          <div class="social-icons"></div>
+          <div class="social__icons">
+            <a href="https://vk.com/" class="social__icons_vk"></a>
+            <a href="https://youtube.com/" class="social__icons_youtube"></a>
+          </div>
         </div>
         <div class="contact-us">
           <a href="tel:88002506060" class="footer__phone phone">8 800 250 60 60</a>

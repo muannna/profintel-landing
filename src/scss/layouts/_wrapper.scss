@@ -9,3 +9,15 @@
     overflow: hidden;
   }
 }
+
+.contact-me {
+  &__wrapper {
+    max-width: $content-width + 30px;
+  }
+}
+
+.footer {
+  &__wrapper {
+    max-width: $content-width + 50px;
+  }
+}
