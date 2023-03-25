@@ -1,11 +1,26 @@
 .footer {
+  @include media-tablet {
+    padding-bottom: 50px;
+  }
+
   @include font(300, 1.2rem, 3.1rem);
 
   padding-top: 53px;
   color: $color-light;
   background-color: $color-accent;
 
+  &__columns {
+    @include media-tablet {
+      flex-direction: column;
+      align-content: center;
+    }
+  }
+
   &__logo {
+    @include media-tablet {
+      margin: 2px 0 0;
+    }
+
     width: 139px;
     height: 35px;
     margin: 12px 0 0;
@@ -17,27 +32,28 @@
       filter: opacity(0.8);
     }
   }
+}
 
-  &__phone {
-    @include font(700, 2.4rem, 2.9rem);
-
-    color: $color-light;
-  }
-
-  &__mail {
-    @include font(600, 1.5rem, 1.8rem);
-
-    padding: 10px 0;
-    color: $color-light;
-    text-align: end;
-    text-decoration: underline;
+.copyright {
+  @include media-tablet {
+    text-align: center;
   }
 }
 
 .social {
-  margin-left: 126px;
+  @include media-tablet {
+    order: 3;
+    margin: 5px 0 0 1px;
+    text-align: center;
+  }
+
+  margin-left: 128px;
 
   &__icons {
+    @include media-tablet {
+      padding-top: 0;
+    }
+
     padding-top: 2px;
 
     &_vk {
@@ -48,6 +64,10 @@
     }
 
     &_youtube {
+      @include media-tablet {
+        margin: 3px 0 0 14px;
+      }
+
       display: inline-block;
       width: 40px;
       height: 27px;
@@ -58,9 +78,36 @@
 }
 
 .contact-us {
-  margin: 0 69px 90px 0;
+  @include media-tablet {
+    order: 2;
+    margin: 23px 0 19px 1px;
+    text-align: center;
+  }
+
+  margin: 0 65px 90px 0;
 
   a {
     display: block;
+  }
+
+  &__phone {
+    @include font(700, 2.4rem, 2.9rem);
+
+    color: $color-light;
+    letter-spacing: 0.02em;
+  }
+
+  &__mail {
+    @include media-tablet {
+      padding: 7px 0;
+      text-align: center;
+    }
+
+    @include font(600, 1.5rem, 1.8rem);
+
+    padding: 10px 0;
+    color: $color-light;
+    text-align: end;
+    text-decoration: underline;
   }
 }

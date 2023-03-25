@@ -1,6 +1,10 @@
 .contact-me {
+  @include media-tablet {
+    padding: 90px 0 0;
+  }
+
   position: relative;
-  padding: 90px 0 0;
+  padding: 87px 0 0;
   color: $color-light;
   background-color: $color-accent;
 
@@ -14,7 +18,7 @@
 
   &__content {
     @include media-tablet {
-      padding-bottom: 60px;
+      padding-bottom: 64px;
     }
   }
 
@@ -24,7 +28,7 @@
     }
 
     max-width: 305px;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
   }
 
   &__subtitle {
@@ -88,7 +92,7 @@
       display: none;
     }
 
-    margin-bottom: 35px;
+    margin-bottom: 33px;
     color: $color-light;
   }
 
@@ -104,7 +108,7 @@
     }
 
     width: 436px;
-    padding-top: 41px;
+    padding-top: 37px;
   }
 
   &__button {
@@ -124,7 +128,7 @@
     position: absolute;
     top: 0;
     left: 302px;
-    width: 257px;
+    width: 258px;
     height: 77px;
     padding: 28px 0;
     text-align: center;
@@ -140,7 +144,7 @@ input[type="tel"] {
 
   z-index: 0;
   width: 410px;
-  padding: 28px 206px 28px 48px;
+  padding: 34px 214px 26px 46px;
   border-radius: 50px;
 
   &::placeholder {
