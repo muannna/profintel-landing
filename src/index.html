@@ -100,7 +100,7 @@
           <div class="contact-me__form">
             <h3 class="form__title">Объясняем понятно, решаем быстро</h3>
             <form action method="POST" class="form">
-              <input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+              <input type="tel" name="tel" placeholder="+7 (___) ___-__-__" pattern="^(8|\+7)?[\s\-]?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$" required>
               <button type="submit" class="button form__button">Перезвоните мне</button>
             </form>
             <p class="form__subtitle">Нажимая на кнопку «Оставить заявку», вы даёте согласие на обработку персональных данных</p>

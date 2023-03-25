@@ -144,7 +144,8 @@ input[type="tel"] {
 
   z-index: 0;
   width: 410px;
-  padding: 34px 214px 26px 46px;
+  height: 75px;
+  padding: 34px 198px 26px 46px;
   border-radius: 50px;
 
   &::placeholder {
@@ -152,5 +153,9 @@ input[type="tel"] {
 
     color: $color-tel;
     text-align: center;
+  }
+
+  &:invalid {
+    border: 2px solid red;
   }
 }
