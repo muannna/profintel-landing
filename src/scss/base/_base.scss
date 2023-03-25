@@ -18,10 +18,10 @@ a {
 html {
   box-sizing: border-box;
   height: 100%;
+  overflow-x: hidden;
   font-size: 10px;
   scroll-behavior: smooth;
   user-select: none;
-  overflow-x: hidden;
 }
 
 body {
