@@ -45,8 +45,8 @@
 
     &_bg {
       @include media-laptop {
-        background: no-repeat center url('../assets/images/png/monitors-small.png');
         height: 624px;
+        background: no-repeat center url('../assets/images/png/monitors-small.png');
       }
 
       @include media-small-mobile {
