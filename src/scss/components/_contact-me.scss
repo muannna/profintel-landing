@@ -107,6 +107,10 @@
       padding-top: 44px;
     }
 
+    @include media-small-mobile {
+      width: calc(100vw - 20px);
+    }
+
     width: 436px;
     padding-top: 37px;
   }
@@ -125,6 +129,12 @@
       margin-top: 23px;
     }
 
+    @include media-small-mobile {
+      width: 267px;
+      height: 61px;
+      padding: 18px 0;
+    }
+
     position: absolute;
     top: 0;
     left: 302px;
@@ -140,6 +150,12 @@ input[type="tel"] {
     width: 342px;
     height: 75px;
     padding: 36px 93px 26px 4px;
+  }
+
+  @include media-small-mobile {
+    width: 267px;
+    height: 61px;
+    padding: 28px 15px 26px 4px;
   }
 
   @include font(400, 2rem, 2.5rem);

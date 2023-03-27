@@ -9,6 +9,10 @@
       }
     }
 
+    @include media-small-mobile {
+      padding-right: 26px;
+    }
+
     max-width: 510px;
     padding: 57px 0 176px 20px;
   }
@@ -18,6 +22,10 @@
       @include font(700, 4rem, 4.9rem);
 
       margin-bottom: 44px;
+    }
+
+    @include media-small-mobile {
+      @include font(700, 3.5rem, 4.9rem);
     }
   }
 
