@@ -1,0 +1,37 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.promo {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.benefits {
+  &__wrapper {
+    @include media-tablet {
+      padding-top: 86px;
+    }
+
+    padding-top: 148px;
+  }
+}
+
+.contact-me {
+  &__wrapper {
+    max-width: $content-width + 30px;
+  }
+}
+
+.footer {
+  &__wrapper {
+    @include media-laptop {
+      margin: 0 30px;
+    }
+
+    max-width: $content-width + 50px;
+  }
+}

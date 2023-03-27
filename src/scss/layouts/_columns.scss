@@ -1,0 +1,7 @@
+.layout-2-column {
+  @include columns();
+}
+
+.layout-3-column {
+  @include columns($justify: center, $gap: 120px);
+}

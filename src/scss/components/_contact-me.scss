@@ -1,0 +1,179 @@
+.contact-me {
+  @include media-tablet {
+    padding: 90px 0 0;
+  }
+
+  position: relative;
+  padding: 87px 0 0;
+  color: $color-light;
+  background-color: $color-accent;
+
+  &__column {
+    @include columns($justify: start, $gap: 79px);
+
+    @include media-laptop {
+      justify-content: center;
+    }
+  }
+
+  &__content {
+    @include media-tablet {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__title {
+    @include media-laptop {
+      text-align: center;
+    }
+
+    max-width: 305px;
+    padding-bottom: 30px;
+  }
+
+  &__subtitle {
+    @include media-laptop {
+      text-align: center;
+    }
+
+    @include media-tablet {
+      padding-left: 0;
+    }
+
+    padding-left: 6px;
+    color: $color-light;
+  }
+
+  &__arrow {
+    @include media-laptop {
+      display: none;
+    }
+
+    width: 394px;
+    height: 72px;
+    padding-top: 10px;
+    background: no-repeat right center url('../assets/images/svg/arrow.svg');
+  }
+
+  &__form {
+    @include media-tablet {
+      padding-top: 0;
+    }
+
+    padding-top: 10px;
+  }
+
+  &__line {
+    @include media-tablet {
+      padding: 82px 0 0;
+    }
+
+    width: 100%;
+    padding: 92px 0 0;
+    background: no-repeat bottom url('../assets/images/png/line.png');
+  }
+}
+
+.form {
+  @include media-tablet {
+    @include columns($justify: center);
+
+    align-items: baseline;
+  }
+
+  position: relative;
+
+  &__title {
+    @include media-laptop {
+      text-align: center;
+    }
+
+    @include media-tablet {
+      display: none;
+    }
+
+    margin-bottom: 33px;
+    color: $color-light;
+  }
+
+  &__subtitle {
+    @include media-laptop {
+      margin: auto;
+      text-align: center;
+    }
+
+    @include media-tablet {
+      width: 417px;
+      padding-top: 44px;
+    }
+
+    @include media-small-mobile {
+      width: calc(100vw - 20px);
+    }
+
+    width: 436px;
+    padding-top: 37px;
+  }
+
+  &__button {
+    @include font(700, 2rem, 2rem);
+
+    @extend %font-add2;
+
+    @include media-laptop {
+      position: static;
+    }
+
+    @include media-tablet {
+      width: 341px;
+      margin-top: 23px;
+    }
+
+    @include media-small-mobile {
+      width: 267px;
+      height: 61px;
+      padding: 18px 0;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 302px;
+    width: 258px;
+    height: 77px;
+    padding: 28px 0;
+    text-align: center;
+  }
+}
+
+input[type="tel"] {
+  @include media-laptop {
+    width: 342px;
+    height: 75px;
+    padding: 36px 93px 26px 4px;
+  }
+
+  @include media-small-mobile {
+    width: 267px;
+    height: 61px;
+    padding: 28px 15px 26px 4px;
+  }
+
+  @include font(400, 2rem, 2.5rem);
+
+  z-index: 0;
+  width: 410px;
+  height: 75px;
+  padding: 34px 198px 26px 46px;
+  border-radius: 50px;
+
+  &::placeholder {
+    @include font(400, 2rem, 2.5rem);
+
+    color: $color-tel;
+    text-align: center;
+  }
+
+  &:invalid {
+    border: 2px solid red;
+  }
+}

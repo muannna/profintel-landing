@@ -1,0 +1,25 @@
+.border {
+  &__top {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100vw;
+    height: 16px;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100vw;
+    height: 16px;
+  }
+
+  &_brown {
+    background-image: url('../assets/images/png/border-brown.png');
+  }
+
+  &_green {
+    background-image: url('../assets/images/png/border-green.png');
+  }
+}

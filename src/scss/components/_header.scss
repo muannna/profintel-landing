@@ -1,0 +1,48 @@
+.header {
+  @include media-laptop {
+    margin: 45px 44px 0;
+  }
+
+  margin: 71px 0 0;
+
+  &__layout {
+    @include media-laptop {
+      @include columns($justify: space-between);
+    }
+  }
+
+  &__logo {
+    @include media-laptop {
+      width: 193px;
+      height: 49px;
+      margin-left: 0;
+    }
+ 
+    width: 293px;
+    height: 74px;
+    margin-left: 20px;
+
+    &:hover {
+      @extend %transition-fast;
+  
+      filter: opacity(0.7);
+    }
+  }
+
+  &__phone {
+    @include font(700, 3.6rem, 4.4rem);
+
+    @include media-laptop {
+      @include font(700, 2.4rem, 2.9rem);
+    }
+
+    padding-top: 12px;
+    color: $color-primary;
+
+    &:hover {
+      @extend %transition-fast;
+
+      filter: opacity(0.7);
+    }
+  }
+}

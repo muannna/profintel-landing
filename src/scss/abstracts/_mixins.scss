@@ -1,0 +1,52 @@
+@mixin font ($weight, $size, $height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin columns ($width: auto, $justify: space-between, $gap: normal) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justify;
+  column-gap: $gap;
+
+  >* {
+    flex-basis: $width;
+  }
+}
+
+@mixin media-laptop {
+  @media (max-width: $desktop-width) {
+      @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+      @content;
+  }
+}
+
+@mixin media-small-tablet {
+  @media (max-width: $small-tablet-width) {
+      @content;
+  }
+}
+
+@mixin media-mobile {
+  @media (max-width: $mobile-big-width) {
+      @content;
+  }
+}
+
+@mixin media-small-mobile {
+  @media (max-width: ($mobile-big-width - 1px)) {
+      @content;
+  }
+}
+
+@mixin media-old-mobile {
+  @media (max-width: $old-mobile) {
+    @content;
+  }
+}

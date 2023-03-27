@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body {
+  @include font(400, 1.4rem, 2rem);
+
+  @extend %font-prim;
+
+  background-color: $color-background;
+}
+
+h1 {
+  @include font(700, 6.4rem, 7.8rem);
+
+  @extend %font-add;
+
+  margin: 0.66em 0;
+  color: $color-primary
+}
+
+h2 {
+  @include font(400, 4.8rem, 5.9rem);
+
+  @extend %font-add;
+}
+
+h3 {
+  @include font(400, 2.4rem, 3.9rem);
+
+  color: $color-primary;
+}
+
+h4 {
+  @include font(600, 2.2rem, 2.7rem);
+
+  @extend %font-add;
+}
